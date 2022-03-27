@@ -1,0 +1,7 @@
+# Small-Search-Engine
+Small search engine for various topic using GNews API
+
+There are topic option for searching Breaking-News, Technology, Entertainment, Sports, Health
+
+Due to the limitation of the GNews free API the number of result option is limited to maximum of 10 and the total number of search that can be performed everyday is 100 across all devices.
+
