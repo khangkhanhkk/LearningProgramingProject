@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Project 4 - Xây dựng một ứng dụng xem tin tức </title>
+
+</head>
+
+<body class="container">
+    <main class="row">
+        <div id="headline">
+            <h1>My news <a href='#' class="lightbox" id="btn1"><img src="img/Search_Icon.png" width="20px"
+                        height="20px"></a></h1>            
+        </div>
+          <!--input search-->
+        <div class="row">
+            </form>
+        </div>
+
+        </div>
+        <div id="loader" class="lds-dual-ring hidden overlay"></div>
+        <div id="loadtime"></div>
+        <div id="newslist"></div>
+        <div class="backdrop">
+
+        </div>
+        <div class="box">
+            <div class="close">X</div>
+            <form id="search" role="search" onsubmit="return false">
+                <div class="row">
+                    <div class="label">Keywords:
+                        <input type="text" name="q" id="keywordsearch" placeholder="search" tabindex="5" size="15"
+                            autocomplete="off">
+                        <input type="button" tabindex="6" value="Search" id="btn2">
+                    </div>
+                </div>
+                <div id="searchexpando" class="infobar" style="display: block;">
+                    <label id="filter1">Number of result<select name="num" id="nums">
+                            <option value="2">2</option>
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                        </select>
+                    </label>
+                    <br>
+                    <label id="filter2">Topic:<select name="tp" id="topics">
+                            <option value="breaking-news">Breaking-news</option>
+                            <option value="technology">Technology</option>
+                            <option value="entertainment">Entertainment</option>
+                            <option value="sports">Sports</option>
+                            <option value="health">Health</option>
+                        </select>
+                    </label>
+            </form>
+        </div>
+    </main>
+    <script src="script2.js"></script>
+</body>
+
+</html>

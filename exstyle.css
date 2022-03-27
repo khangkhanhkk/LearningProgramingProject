@@ -1,0 +1,131 @@
+body {
+    background: #ececec;
+}
+#headline {
+    text-align: center;
+    background-color: wheat;
+}
+
+.ftimg{
+    float:left;
+    width:30%;
+    height:200px;
+
+}
+.imgtxt {
+    float:left;
+    height:200px;
+    width: 60%;
+    padding-left: 10px;
+}
+.ncontainer{
+    padding: 2%;
+    margin-top: 115px;
+}
+.backdrop {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background:#000;
+    opacity: .0;
+    filter:alpha(opacity=0);
+    z-index:50;
+    display: none;
+}
+.box {
+    position: absolute;
+    top: 13%;
+    width: 300px;
+    height: 60px;
+    background:#ffffff;
+    padding:10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #444444;
+    z-index:51;
+    display:none;
+}
+.close {
+    float:right;
+    margin-right:6px;
+    cursor:pointer;
+}
+/*********************************************/
+@media only screen and (max-width:375px ) {
+    .box{
+        left: 10%;
+    }
+    .overlay{
+        left: 15%
+    }
+}
+@media only screen and (min-width:376px ) {
+    .box{
+        left: 15%;
+    }
+    .overlay{
+        left: 20%
+    }
+}
+@media only screen and (min-width:768px) {
+    .box{
+        left: 22%;
+    }
+    .overlay{
+        left: 27%
+    }
+}
+@media only screen and (min-width: 992px) {
+    .box{
+        left: 30%;
+    }
+    .overlay{
+        left: 35%
+    }
+}
+
+/*********************************************/
+
+/*Hidden class for adding and removing*/
+.lds-dual-ring.hidden {
+    display: none;
+}
+
+/*Add an overlay to the entire page blocking any further presses to buttons or other elements.*/
+.overlay {
+    position: fixed;
+    top: 35%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.8);
+    z-index: 999;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+/*Spinner Styles*/
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 5% auto;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
